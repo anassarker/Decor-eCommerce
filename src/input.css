@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar-section{
+    height: 100%;
+}
