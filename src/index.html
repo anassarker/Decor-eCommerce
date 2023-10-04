@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
   <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7aeaaf9b0e.js" crossorigin="anonymous"></script>
   <title>Decor</title>
 </head>
 <body class="bg-white h-[80px] ">
   <header class="h-[10vh]">
     <nav class="flex justify-between h-[80px]">
-      <div class="v-[14vw] pt-[29px] pl-[25px] pr-24"><img src="./img/logo-1685434770.jpg"></div>
+      <div class="v-[14vw] pt-[29px] pl-[30px] pr-24"><img src="./img/logo-1685434770.jpg"></div>
       <div class="flex justify-between px-3 w-[85vw] bg-gray-100 h-full pl-[40px] pt-[25px] font-normal text-black cursor-pointer text-2xl">
         <div>
           <i class="fa-solid fa-bars"></i>
@@ -23,18 +24,22 @@
       </div>
     </nav>
   </header>
-<section class="banner p-14 bg-white pt-[141px] flex justify-between">
-  <div class="banner-info">
-    <h2>No. 199122</h1>
-    <h1>Pulco</h1>
-    <div>
-      <h1>$1266.00</h1>
+  <section class="banner p-14 bg-white pt-[140px] flex justify-between">
+    <div class="banner-info w-1/4 pt-[40px] pl-[15px]">
+      <h2 class="text-xs pb-2 text-black font-thin pl-2">No. 199122</h2> <!-- Fixed closing tag for h2 -->
+      <h1 class="font-bold text-8xl text-slate-800 pb-7">Pulco</h1>
+      <div class="text-black border-t-2 border-b-2 border-  border-black inline-flex py-2">
+        <h1 class="w-[200px] text-xl font-bold">$1266.00</h1>
+        <p class="text-xs pt-1.5 font-extralight">VAT included</p>
+      </div>
+      <p class="pt-5 text-black text-[10px] pb-12">13.9"W X 15.2"D X 30.7"H</p>
+      <button class=" text-black pl-7 pt-3 pb-3 pr-7 border-black border-2 text-sm hover:bg-gray-800 hover:text-white hover:border-none" style="transition: .3s ease-in-out;">Discover Now</button>
     </div>
-    <p>13.9"W X 15.2"D X 30.7"H</p>
-    <button type="button">Discover Now</button>
-  </div>
-  <div class="banner-img w-full"> <img src="./img/vt_decor_home6_slide1.webp"></div>
-</section>
+    <div class="mr-[-55px] banner-img w-3/4 ">
+      <img src="./img/vt_decor_home6_slide1.webp" alt="Banner Image"> <!-- Added alt attribute for accessibility -->
+    </div>
+  </section>
+  
 
 
 
