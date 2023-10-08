@@ -27,7 +27,7 @@
   <section class="bg-white">
     <div class="banner p-14 bg-white pt-[140px] flex justify-between">
       <div class="banner-info w-1/4 pt-[40px] pl-[15px]">
-        <h2 class="text-xs pb-2 text-black font-thin pl-2">No. 199122</h2> <!-- Fixed closing tag for h2 -->
+        <h2 class="text-xs pb-2 text-black font-thin pl-2">No. 199122</h2>
         <h1 class="font-bold text-8xl text-slate-800 pb-7">Pulco</h1>
         <div class="text-black border-t-2 border-b-2 border-  border-black inline-flex py-2">
           <h1 class="w-[200px] text-xl font-bold">$1266.00</h1>
@@ -37,7 +37,7 @@
         <button class="text-black border-zinc-700 bg-transparent hover:bg-zinc-950 hover:text-white border-2 p-7 pt-[12px] pb-[12px] text-xs font-medium text-gray-900" style="transition: .3s ease-in-out;">Discover Now</button>
       </div>
       <div class="mr-[-55px] banner-img w-3/4 ">
-        <img src="./img/vt_decor_home6_slide1.webp" alt="Banner Image"> <!-- Added alt attribute for accessibility -->
+        <img src="./img/vt_decor_home6_slide1.webp" alt="Banner Image">
       </div>
     </div>
     
@@ -47,11 +47,22 @@
     </div>
   </section>
   <section class="element bg-white">
-    <div class="flex gap-10 pb-44">
-      <div><img src="./img/vt_decor_home6_banner1.webp"></div>
-      <div><img src="./img/vt_decor_home6_banner2.webp"></div>
+    <div class="flex gap-10 pb-44 px-8">
+      <div class=" w-1/2 bg-[url('./img/vt_decor_home6_banner1.webp')] bg-no-repeat bg-cover h-[60vh]">
+        <div class="pt-64 pl-12 ">
+          <h1 class="text-gray-800 text-[38px] font-normal">Stools</h1>
+          <p class="text-gray-500 font-light text-sm">13 items</p>
+        </div>
+      </div>
+      <div class="w-1/2 bg-[url('./img/vt_decor_home6_banner2.webp')] bg-no-repeat bg-cover h-[60vh]">
+        <div class="pt-64 pl-12">
+          <h1 class="text-gray-800 text-[38px] font-normal">Sofas</h1>
+          <p class="text-gray-500 font-light text-sm">30 items</p>
+        </div>
+      </div>
     </div>
   </section>
+  
   <section class="advertisement bg-[url('../src/img/vt_decor_home6_banner3.jpg')] bg-no-repeat bg-cover h-[100vh]">
       <div class=" w-1/2 text-center px-10 pt-32 ">
         <h1 class="font-extralight text-slate-700 pb-6">#FURNITURES</h1>
@@ -66,54 +77,157 @@
       <p class="font-light text-sm text-gray-500">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.      </p>
     </div>
 
-    <div class="products pt-28">
-      <div class="flex col-4 px-8 ">
-        <div class="row border bg-gray-900 border-gray-300">
-          <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+    <div class="products w-full text-center pt-28">
+      <div class="flex col-4 px-8">
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
+          </div>
         </div>
-        <div class="row bg-gray-900 border border-x-0 border-gray-300">
-          <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/the-adventure-begins-framed-poster (1).jpg">
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
+          </div>
         </div>
-        <div class="row  bg-gray-900 border border-gray-300">
-          <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/mug-the-adventure-begins.jpg">
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
+          </div>
         </div>
-        <div class="row  bg-gray-900 border border-l-0 border-gray-300">
-          <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/brown-bear-cushion.jpg">
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-4 flex">
-        <div class="flex col-4 px-8">
-          <div class="row  bg-gray-900 border border-t-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+      <div class="flex col-4 px-8">
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
-          <div class="row  bg-gray-900 border border-t-0 border-x-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/the-adventure-begins-framed-poster (1).jpg">
+        </div>
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
-          <div class="row  bg-gray-900 border border-t-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/mug-the-adventure-begins.jpg">
+        </div>
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
-          <div class="row  bg-gray-900 border border-t-0 border-l-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/brown-bear-cushion.jpg">
+        </div>
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4 flex">
-        <div class="flex col-4 px-8">
-          <div class="row  bg-gray-900 border border-t-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+      <div class="flex col-4 px-8">
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
-          <div class="row  bg-gray-900 border border-t-0 border-x-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/the-adventure-begins-framed-poster (1).jpg">
+        </div>
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
-          <div class="row  bg-gray-900 border border-t-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/mug-the-adventure-begins.jpg">
+        </div>
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
-          <div class="row  bg-gray-900 border border-t-0 border-l-0 border-gray-300">
-            <img class="duration-300 ease-in-out hover:opacity-75 cursor-pointer" src="./img/brown-bear-cushion.jpg">
+        </div>
+        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+          <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-6 ">
+            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-lg font-medium">Teapot</h1>
+            <div class="flex gap-3 justify-center  text-base">
+              <p class="line-through text-gray-600 ">$23.90</p>
+              <p>$19.12</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     <div class="flex justify-center pt-[90px] pb-6">
       <button class="text-white bg-zinc-950 hover:bg-orange-600 border-2 p-14 pl-10 pr-10 pt-[15px] pb-[15px]" style="transition: .3s ease-in-out;">See All Products</button>
     </div>
