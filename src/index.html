@@ -8,11 +8,11 @@
   <script src="https://kit.fontawesome.com/7aeaaf9b0e.js" crossorigin="anonymous"></script>
   <title>Decor</title>
 </head>
-<body class="bg-white h-[80px] ">
+<body class="bg-white h-[80px]">
 
   <!-- dropdown -->
-  <div id="menu-bar" class="h-full w-[305px] bg-white invisible fixed z-50 top-0 left-0">
-    <ion-icon class=" text-gray-500 absolute cursor-pointer top-4 right-5 text-3xl font-thin" name="close-outline" id="cross"></ion-icon>
+  <div id="menu-bar" class="h-full w-[305px] bg-white invisible fixed z-50 top-0 left-0 slide-transition" style="transition: .3s ease-out; transform: translateX(100%);">
+    <ion-icon class=" text-gray-500 absolute cursor-pointer top-4 right-5 text-3xl font-thin " name="close-outline" id="cross"></ion-icon>
     <div class="w-full pl-[30px]"><h1><img src="./img/logo-1685434770.jpg" class="pt-[50px]"></h1></div>
     <ul class="pt-14 text-black w-full pl-[48px]">
       <li class="pb-7 text-gray-800 text-[16px] hover:text-orange-600 transition duration-500 ease-in-out"><a href="">Home</a></li>
@@ -39,9 +39,9 @@
           </i>
         </div>
         <div class="flex gap-6 pr-8">
-          <ion-icon class="text-2xl font-thin" name="search-outline"></ion-icon>
-          <ion-icon class="text-2xl font-thin" name="person-outline"></ion-icon>
-          <ion-icon class="font-extralight text-2xl" name="cart-outline"></ion-icon>
+          <ion-icon class="text-2xl hover:text-orange-600 font-thin transition duration-300 ease-in-out" name="search-outline"></ion-icon>
+          <ion-icon class="text-2xl font-thin hover:text-orange-600 transition duration-300 ease-in-out" name="person-outline"></ion-icon>
+          <ion-icon class="font-extralight text-2xl hover:text-orange-600 transition duration-300 ease-in-out" name="cart-outline"></ion-icon>
         </div>
       </div>
     </nav>
@@ -56,7 +56,7 @@
           <p class="text-xs pt-1.5 font-light">VAT included</p>
         </div>
         <p class="pt-5 text-black text-[10px] pb-10">13.9"W X 15.2"D X 30.7"H</p>
-        <button class="text-black border-zinc-700 bg-transparent hover:bg-zinc-950 hover:text-white border-2 p-7 pt-[12px] pb-[12px] text-xs font-medium text-gray-900" style="transition: .3s ease-in-out;">Discover Now</button>
+        <button class=" border-zinc-700 bg-transparent hover:bg-zinc-950 hover:text-white border-2 p-7 pt-[12px] pb-[12px] text-xs font-medium text-gray-900" style="transition: .3s ease-in-out;">Discover Now</button>
       </div>
       <div class="mr-[-55px] banner-img w-3/4 ">
         <img src="./img/vt_decor_home6_slide1.webp" alt="Banner Image">
@@ -101,146 +101,223 @@
 
     <div class="products w-full text-center pt-28">
       <div class="flex col-4 px-8">
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
           <img class="cursor-pointer" src="./img/hummingbird-printed-t-shirt (2).jpg">
           <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Teapot</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm">
-              <p class="line-through text-gray-400 ">$23.90</p>
-              <p class="font-light text-sm">$19.12</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Teapot</h1> 
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="line-through text-gray-400 ">$23.90</p>
+                  <p class="font-light text-sm">$19.12</p>
+              </div>
+           </div>
         </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/the-adventure-begins-framed-poster (2).jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/33-home_default/the-adventure-begins-framed-poster.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Discuss Floor And Table</h1>
-            <div class="flex gap-3 justify-center text-base pt-1">
-              <p class="font-light text-sm">$29.00</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Discuss Floor And Table</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">                 
+                  <p class="font-light text-sm">$29.00</p>
+              </div>
+           </div>
         </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/mug-the-adventure-begins (1).jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/39-home_default/mug-the-adventure-begins.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Nude</h1>
-            <div class="flex gap-3 justify-center  text-sm font-light pt-1 ">
-              <p>$11.00</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Nude</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  
+                  <p class="font-light text-sm">$11.90</p>
+              </div>
+           </div>
         </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/brown-bear-cushion (1).jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+
+         <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/45-home_default/brown-bear-cushion.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">After Room Barstool</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm">
-              <p class="font-light">$19.12</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Afternoon Barstool</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  
+                  <p class="font-light text-sm">$18.90</p>
+              </div>
+           </div>
         </div>
       </div>
+
+     <div class="flex col-4 px-8">
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/29-home_default/brown-bear-printed-sweater.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Miro Dining Table</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="line-through text-gray-400 ">$35.90</p>
+                  <p class="font-light text-sm">$28.72</p>
+              </div>
+           </div>
+        </div>
+
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/35-home_default/today-is-a-good-day-framed-poster.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">UNA Chair</h1> 
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="line-through text-gray-400 ">$23.90</p>
+                  <p class="font-light text-sm">$29.00</p>
+              </div>
+           </div>
+        </div>
+
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/41-home_default/mug-today-is-a-good-day.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Chair</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="font-light text-sm">$11.90</p>
+              </div>
+           </div>
+        </div>
+
+         <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/47-home_default/hummingbird-cushion.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
+          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Orbit Table Lamp One</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="font-light text-sm">$18.90</p>
+              </div>
+           </div>
+        </div>
+
+      </div>
+
       <div class="flex col-4 px-8">
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/brown-bear-printed-sweater (2).jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/31-home_default/the-best-is-yet-to-come-framed-poster.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Mirror Dining Table</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm">
-              <p class="line-through text-gray-400 ">$23.90</p>
-              <p class="font-light">$19.12</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Jonus Table Lamp</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="font-light text-sm">$29.00</p>
+              </div>
+           </div>
         </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/today-is-a-good-day-framed-poster.jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/37-home_default/mug-the-best-is-yet-to-come.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">UNA Chair</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm font-light">
-              <p>$19.12</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Studio Chair</h1> 
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="font-light text-sm">$11.90</p>
+              </div>
+           </div>
         </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/mug-today-is-a-good-day.jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+
+        <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/43-home_default/mountain-fox-cushion.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Black</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm font-light">
-              <p>$19.12</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Bird Stool</h1> 
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  <p class="font-light text-sm">$18.90</p>
+              </div>
+           </div>
         </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/hummingbird-cushion.jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
+
+         <div class="cart-image group relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100 ">
+          <img class="cursor-pointer" src="https://demo80.leotheme.com/prestashop/vt_decor/49-home_default/mountain-fox-vector-graphics.jpg">
+          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button>
           <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Orbit Table Lamp One</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm font-light">
-              <p>$19.12</p>
-            </div>
-          </div>
+          <div class="text-black -mt-5 pb-2">
+              <div class="group">
+                  <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                      <button id="cart-button" class="p-5 bg-zinc-950 hover:bg-orange-600 text-gray-200 text-sm w-full hover:transition duration-500 ease-in-out">+ ADD TO CART</button>
+                  </div>
+              </div>
+              <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium mb-2">Mega Table Lamp</h1>
+              <div class="flex gap-3 justify-center pt-1 text-sm mb-4">
+                  
+                  <p class="font-light text-sm">$9.00</p>
+              </div>
+           </div>
         </div>
+
       </div>
-      <div class="flex col-4 px-8">
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/the-best-is-yet-to-come-framed-poster (1).jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
-          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Jonus Table Lamp</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm">
-              <p class="line-through text-gray-400 ">$23.90</p>
-              <p class="font-light">$19.12</p>
-            </div>
-          </div>
-        </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/mug-the-best-is-yet-to-come.jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
-          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Studio Chair</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm font-light">
-              <p>$19.12</p>
-            </div>
-          </div>
-        </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/mountain-fox-cushion.jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
-          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Bird Stool</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm font-light">
-              <p>$19.12</p>
-            </div>
-          </div>
-        </div>
-        <div class=" relative row border border-r-0 border-b-0 border-gray-300 bg-gray-100">
-          <img class="cursor-pointer" src="./img/mountain-fox-vector-graphics.jpg">
-          <button class="absolute top-3 left-3 hover:text-orange-500 transition duration-300 ease-in-out text-xs text-gray-900">NEW</button> 
-          <ion-icon class="absolute top-2 right-2 text-gray-600  text-5xl hover:invert hover:text-white transition duration-500 ease-in cursor-pointer" name="heart-circle-outline"></ion-icon>
-          <div class="text-black -mt-5 pb-6 ">
-            <h1 class="hover:text-orange-500 cursor-pointer transition duration-300 ease-in-out text-base font-medium">Mega Table Lamp</h1>
-            <div class="flex gap-3 justify-center pt-1 text-sm font-light">
-              <p>$19.12</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
     <div class="flex justify-center pt-[90px] pb-6">
       <button class="text-white bg-zinc-950 hover:bg-orange-600 border-2 p-14 pl-10 pr-10 pt-[15px] pb-[15px]" style="transition: .3s ease-in-out;">See All Products</button>
     </div>
