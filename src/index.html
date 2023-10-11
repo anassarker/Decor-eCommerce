@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
   <link href="/dist/output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/7aeaaf9b0e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"/>
   <title>Decor</title>
 </head>
-<body class="bg-white h-[80px]">
+<body class="bg-white h-[80px] ">
 
   <!-- dropdown -->
   <div id="menu-bar" class="h-full w-[305px] bg-white invisible fixed z-50 top-0 left-0 slide-transition" style="transition: .3s ease-out; transform: translateX(100%);">
@@ -22,16 +23,16 @@
       <li class="pb-7 text-gray-800 text-[16px] hover:text-orange-600 transition duration-500 ease-in-out"><a href="">Pages</a></li>
       <li class="pb-5 text-gray-800 text-[16px] hover:text-orange-600 transition duration-500 ease-in-out"><a href="">Contact</a></li>
     </ul>
-    <div class="pt-14 flex gap-4 w-full text-[16px] pl-[28px] text-gray-500">
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-twitter"></ion-icon>
-      <ion-icon name="logo-google"></ion-icon>
-      <ion-icon name="logo-vk"></ion-icon>
+    <div class="pt-14 flex gap-4 w-full text-[16px] pl-[28px] text-gray-500 ">
+      <ion-icon class="hover:text-orange-500 hover:transition duration-300 ease-in-out hover:text-xl" style="transition: .2s ease in ease-in-out;" name="logo-facebook"></ion-icon>
+      <ion-icon class="hover:text-orange-500 hover:transition duration-300 ease-in-out hover:text-xl" style="transition: .2s ease in ease-in-out;" name="logo-twitter"></ion-icon>
+      <ion-icon class="hover:text-orange-500 hover:transition duration-300 ease-in-out hover:text-xl" style="transition: .2s ease in ease-in-out;" name="logo-google"></ion-icon>
+      <ion-icon class="hover:text-orange-500 hover:transition duration-300 ease-in-out hover:text-xl" style="transition: .2s ease in ease-in-out;" name="logo-vk"></ion-icon>
     </div>
   </div>
 
   <header class="h-[10vh]">
-    <nav class="flex justify-between h-[80px]">
+    <nav class="flex justify-between h-[75px]">
       <div class="v-[14vw] pt-[29px] pl-[30px] pr-24"><img src="./img/logo-1685434770.jpg"></div>
       <div class="flex justify-between px-3 w-[85vw] bg-gray-100 h-full pl-[40px] pt-[25px] font-normal text-black cursor-pointer text-2xl">
         <div>
@@ -39,20 +40,61 @@
           </i>
         </div>
         <div class="flex gap-6 pr-8">
-          <ion-icon class="text-2xl hover:text-orange-600 font-thin transition duration-300 ease-in-out" name="search-outline"></ion-icon>
-          <ion-icon class="text-2xl font-thin hover:text-orange-600 transition duration-300 ease-in-out" name="person-outline"></ion-icon>
+          <ion-icon class="text-2xl hover:text-orange-600 font-thin transition duration-300 ease-in-out" name="search-outline">
+          </ion-icon>
+          <ion-icon class="top-down-icon text-2xl font-thin hover:text-orange-600 transition duration-300 ease-in-out" name="person-outline"></ion-icon>
           <ion-icon class="font-extralight text-2xl hover:text-orange-600 transition duration-300 ease-in-out" name="cart-outline"></ion-icon>
         </div>
       </div>
     </nav>
+
+
+        <!-- account icon -->
+
+        <div class="invisible top-down absolute right-24 p-4 top-[68px] bg-white border flex justify-between gap-4 w-[258px] pb-7">
+
+          <div class="lang-currency text-xs text-gray-800 font-light left-2">
+            <h1 class="pb-[6px]">Language:</h1>
+            <div class="flags flex-col bg-white border p-2 pr-5">
+              <div class="col-3 flex gap-3 pb-2">
+                <a href="" class="border"><img src="./img/us.jpg"></a>
+                <a href="" class="border"><img src="./img/ire.jpg"></a>
+                <a href="" class="border"><img src="./img/german.jpg"></a>
+              </div>
+              <div class="col-3 flex gap-3">
+                <a href="" class="border"><img src="./img/nepal.jpg"></a>
+                <a href="" class="border"><img src="./img/singa.jpg"></a>
+                <a href="" class="border"><img src="./img/brazil.jpg"></a>
+              </div>
+            </div>
+            <div class="pt-3">
+              <h1 class="pb-[6px]">Currency:</h1>
+              <div class="currency p-1 mr-8 bg-white border flex justify-between px-2">
+                <span class="hover:text-orange-600 cursor-pointer">EUR</span>
+                <span class="text-orange-600 cursor-pointer">USD</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="account-menu pr-7 mt-[-5px]">
+            <ul class="text-xs text-zinc-400 gap-5 font-light">
+              <li class="pt-[8px] hover:text-orange-600  cursor-pointer" style="transition: .2s ease-in-out;">Sign In</a></li>
+              <li class="pt-[8px] hover:text-orange-600  cursor-pointer" style="transition: .2s ease-in-out;">Register</a></li>
+              <li class="pt-[8px] hover:text-orange-600  cursor-pointer" style="transition: .2s ease-in-out;">My Account</a></li>
+              <li class="pt-[8px] hover:text-orange-600  cursor-pointer" style="transition: .2s ease-in-out;">Wishlist (0) </a></li>
+              <li class="pt-[8px] hover:text-orange-600  cursor-pointer" style="transition: .2s ease-in-out;">Compare (0) </a></li>
+              <li class="pt-[8px] hover:text-orange-600  cursor-pointer" style="transition: .2s ease-in-out;">Checkout</a></li>
+            </ul>
+          </div>
+        </div>
   </header>
-  <section class="bg-white">
+  <section class="banner-section bg-white">
     <div class="banner p-14 bg-white pt-[140px] flex justify-between">
       <div class="banner-info w-1/4 pt-[40px] pl-[15px]">
         <h2 class="text-xs pb-2 text-black font-thin pl-2">No. 199122</h2>
         <h1 class="font-bold text-8xl text-slate-800 pb-7">Pulco</h1>
         <div class="text-black border-t-2 border-b-2 border-  border-black inline-flex py-2">
-          <h1 class="w-[200px] text-xl font-bold">$1266.00</h1>
+          <h1 class="w-[200px] text-xl font-semibold">$1266.00</h1>
           <p class="text-xs pt-1.5 font-light">VAT included</p>
         </div>
         <p class="pt-5 text-black text-[10px] pb-10">13.9"W X 15.2"D X 30.7"H</p>
@@ -67,19 +109,22 @@
       <button><ion-icon class="text-black font-thin" name="chevron-back-outline"></ion-icon></button>
       <button><ion-icon class="text-black" name="chevron-forward-outline"></ion-icon></button>
     </div>
+
+
+
   </section>
   <section class="element bg-white">
     <div class="flex gap-10 pb-44 px-8">
       <div class=" w-1/2 bg-[url('./img/vt_decor_home6_banner1.webp')] bg-no-repeat bg-cover h-[60vh]">
         <div class="pt-64 pl-12 ">
-          <h1 class="text-gray-800 text-[38px] font-normal">Stools</h1>
-          <p class="text-gray-500 font-light text-sm">13 items</p>
+          <h1 class="text-gray-800 text-[38px] font-normal hover:text-orange-600 cursor-pointer">Stools</h1>
+          <p class="text-gray-500 font-light text-sm hover:text-orange-600 cursor-pointer">13 items</p>
         </div>
       </div>
       <div class="w-1/2 bg-[url('./img/vt_decor_home6_banner2.webp')] bg-no-repeat bg-cover h-[60vh]">
         <div class="pt-64 pl-12">
-          <h1 class="text-gray-800 text-[38px] font-normal">Sofas</h1>
-          <p class="text-gray-500 font-light text-sm">30 items</p>
+          <h1 class="text-gray-800 text-[38px] font-normal hover:text-orange-600 cursor-pointer">Sofas</h1>
+          <p class="text-gray-500 font-light text-sm hover:text-orange-600 cursor-pointer">30 items</p>
         </div>
       </div>
     </div>
@@ -327,8 +372,8 @@
     </div>
   </section>
 <section class="h-[55vh] flex flex-col items-center justify-center bg-[#202020] w-full px-4">
-  <div class="flex w-full justify-between">
-    <div class=" invert">
+  <div class="flex w-full justify-between pb-8">
+    <div class=" invert pl-8">
       <img src="./img/logo-1685434770 (1).jpg">
     </div>
     <div>
@@ -338,18 +383,23 @@
       <p>012-345-6789</p>
       <p>[email protected]</p>
     </div>
-    <div>
-      <button>+JOIN OUR NEWSLETTER</button>
+    <div class="pr-8">
+      <div class="border w-full flex items-center justify-center">
+        <a href="#" class="relative inline-flex items-center justify-start px-6  py-3 overflow-hidden font-medium transition-all shadow bg-zinc-800 rounded hover:bg-white group">
+          <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span class="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">+ JOIN OUR NEWSLETTER</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <hr class="bg-gray-200 w-full mt-12">
-  <div class="flex justify-between w-full pt-16">
+  <hr class="bg-gray-200 w-full mt-10">
+  <div class="flex justify-between w-full pt-10 mb-[-80px]">
     <p class="text-sm">Copyright © 2023 Auros. All rights reserved.</p>
     <div class="flex justify-between gap-3">
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-twitter"></ion-icon>
-      <ion-icon name="logo-google"></ion-icon>
+      <ion-icon class="hover:text-orange-600 hover:text-xl transition duration-300 ease-in-out" style="transition: 0.2s ease-in-out;" name="logo-facebook"></ion-icon>
+      <ion-icon class="hover:text-orange-600 hover:text-xl transition duration-300 ease-in-out" style="transition: 0.2s ease-in-out;" name="logo-twitter"></ion-icon>
+      <ion-icon class="hover:text-orange-600 hover:text-xl transition duration-300 ease-in-out" style="transition: 0.2s ease-in-out;" name="logo-google"></ion-icon>
     </div>
   </div>
 </section>

@@ -1,24 +1,65 @@
 const menu = document.querySelector("#menu");
 const menubar = document.querySelector("#menu-bar");
 const cartbtn = document.querySelector("#cart-button");
-
 const cartImage = document.querySelectorAll('.cart-image');
 const cartButton = document.querySelectorAll('#cart-button');
+const topDown = document.querySelector('.top-down');
+const topDownIcon = document.querySelector('.top-down-icon');
 
+let timeoutID;
+
+function showDropdown(){
+
+    if(topDown.classList.contains("invisible")){
+            topDown.classList.remove("invisible");
+            topDown.classList.add("visible");
+        }
+}
+
+function hideDropdown(){
+    if(topDown.classList.contains("visible")){
+        timeoutID = setTimeout(() => {
+            topDown.classList.remove("visible");
+            topDown.classList.add("invisible");
+            }, 500);
+        }      
+}
+
+topDownIcon.addEventListener('mouseenter', () => {
+    clearTimeout(timeoutID);
+    showDropdown();
+});
+
+topDownIcon.addEventListener('mouseleave', () => {
+    hideDropdown();
+});
+
+topDownIcon.addEventListener('click', () =>{
+    if(topDown.classList.contains('invisible')){
+        showDropdown();
+    }
+    else{
+        hideDropdown();
+    }
+});
+
+topDown.addEventListener('mouseenter', () => {
+    clearTimeout(timeoutID);
+});
+
+topDown.addEventListener('mouseleave', () => {
+    hideDropdown();
+});
 
 cartImage.forEach((el,i) => {
-    cartImage[i].addEventListener('mouseenter', () => {
+    cartImage[i].addEventListener("click", () => {
         cartButton[i].style.transform = 'translateY(-25px)';
     });
     
-    cartImage[i].addEventListener('mouseleave', () => {
+    cartImage[i].addEventListener("click", () => {
         cartButton[i].style.transform = 'translateY(0)';
     });
 });
-
-
-
-
 
 menu.addEventListener("click", () => {
     if (menubar.classList.contains("invisible")) {
@@ -44,4 +85,5 @@ window.addEventListener("click", (event) => {
         menubar.style.transform = 'translateX(-100%)';
     }
 });
+
 

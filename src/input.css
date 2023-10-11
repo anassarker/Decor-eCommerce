@@ -12,3 +12,15 @@
     transition: transform 0.3s ease-in-out;
     transform: translateX(-100%);
 }
+
+/* @layer components {
+    .div-style{
+      @apply flex justify-between px-3 w-[85vw] bg-gray-100 h-full pl-[40px] pt-[25px] font-normal text-black cursor-pointer text-2xl
+    }
+    .div-stylemd{
+        @apply flex justify-between px-3 w-[85vw] bg-gray-100 h-full pl-[40px] pt-[25px] font-normal text-black cursor-pointer text-2xl
+    }
+    .div-stylesm{
+
+    }
+  } */
